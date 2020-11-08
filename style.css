@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+*{box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+font-size: 13px;
+font-family:"Barlow Semi Condensed,sans serif";
+
+}
+
+body{background-color: hsl(210, 46%, 95%);}
+
+.container{ max-width: 1080px;
+    height: 50vh;
+    margin: 150px auto;
+    display: grid;
+
+    grid-template-areas:"daniel daniel jonathan kira"
+    "jeanette patrick patrick kira"
+    "footer footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 30px; ;
+
+
+
+
+}
+
+.Daniel{
+    background-color:hsl(263, 55%, 52%) ;
+background-image: url(images/bg-pattern-quotation.svg);
+background-position: 400px 0;
+background-repeat: no-repeat;
+grid-area: daniel;
+
+
+}
+
+.jonathan{
+
+background-color: hsl(217, 19%, 35%);
+grid-area: jonathan;
+
+
+}
+
+.kira{background-color:hsl(0, 0%, 100%) ;
+
+box-shadow:20px 23px 18px -18px rgba(0,0,0,0.53) ;
+
+grid-area: kira;
+
+}
+.Jeanette{
+    background-color:hsl(0, 0%, 100%) ;
+
+    box-shadow:20px 23px 18px -18px rgba(0,0,0,0.53) ;
+grid-area: jeanette;
+}
+ .Patrick{
+background-color: hsl(219, 29%, 14%) ;
+
+grid-area: patrick;
+
+
+ }
+ .attribution{
+grid-area: footer;
+margin: 300px;
+
+
+
+ }
+ img{   border-radius: 30px;
+border: 2px solid whitesmoke;
+
+width: 30px;
+margin-right: 10px;
+}
+
+
+section{border-radius: 10px;
+
+}
+
+
+
+.user {
+    display: flex;
+    align-items: left;
+    flex-direction: row;
+}
+.user{ color: white;}
+
+
+.user1{color: hsl(210, 80%, 8%) ;}
+
+ p{opacity: 0,5;font-weight: 500px;}
+ h1{color:hsl(210, 46%, 95%);
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: 600;
+
+
+}
+.white{
+color: hsl(210, 46%, 95%);
+opacity: 70%;
+
+}
+
+ .black{color: hsl(210, 80%, 8%);}
+ section {
+    padding: 25px;
+
+
+ }
+.name{
+color:hsl(210, 80%, 8%);
+
+}
+
+.op{color:grey;
+    opacity:50%;
+}
+.light{
+    color:grey;
+    opacity:70%;
+
+
+
+}
+
+.carduser {
+    display: flex;
+    flex-direction: column;}
+
+    
+
+    @media screen and (max-width: 800px) {
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 0 20px;
+            margin: 50px auto;
+
+            grid-gap: 5px;
+        }
+    
+        .attribution {
+            padding-top: 750px;
+        }
+    }
+    
+    
+    
+    @media screen and (max-width: 375px) {
+        .container {
+            padding: 0;
+        }
+    }  
